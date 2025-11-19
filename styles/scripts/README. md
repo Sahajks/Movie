@@ -1,0 +1,26 @@
+# 🎬 CineVerse - Revolutionary Movie Website
+
+A groundbreaking movie website with unique design features never seen before in history! Features theme switching and industry-based organization.
+
+## ✨ Features
+
+- **🎥 Film Reel Navigation**: Unique horizontal scrolling navigation that mimics a film reel
+- **🌙 Theme Switching**: Toggle between light and dark themes with smooth transitions
+- **🌍 Industry-Based Organization**: Separate sections for Hollywood, Bollywood, International cinema
+- **😊 Mood-Based Browsing**: Filter movies based on your current mood
+- **📱 Fully Responsive**: Works perfectly on all devices
+- **⚡ Interactive Elements**: Hover effects, animations, and cinematic transitions
+
+## 🚀 Live Demo
+
+Visit the live website: [https://your-username.github.io/cineverse-movie-website](https://your-username.github.io/cineverse-movie-website)
+
+## 🛠️ Technologies Used
+
+- HTML5
+- CSS3 (with CSS Variables for theming)
+- Vanilla JavaScript
+- Font Awesome Icons
+- Google Fonts
+
+## 📁 Project Structure
