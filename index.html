@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineVerse - The Ultimate Movie Experience</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <div class="nav-container">
+        <nav class="film-reel-nav">
+            <div class="reel-container">
+                <div class="industry-canister active" data-industry="home">
+                    <div class="canister-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="industry-name">Home</div>
+                </div>
+                <div class="industry-canister" data-industry="hollywood">
+                    <div class="canister-icon">
+                        <i class="fas fa-film"></i>
+                    </div>
+                    <div class="industry-name">Hollywood</div>
+                </div>
+                <div class="industry-canister" data-industry="bollywood">
+                    <div class="canister-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <div class="industry-name">Bollywood</div>
+                </div>
+                <div class="industry-canister" data-industry="international">
+                    <div class="canister-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <div class="industry-name">International</div>
+                </div>
+                <div class="industry-canister" data-industry="classics">
+                    <div class="canister-icon">
+                        <i class="fas fa-theater-masks"></i>
+                    </div>
+                    <div class="industry-name">Classics</div>
+                </div>
+                <div class="industry-canister" data-industry="indie">
+                    <div class="canister-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="industry-name">Indie Films</div>
+                </div>
+            </div>
+            
+            <div class="theme-toggle" id="themeToggle">
+                <i class="fas fa-sun theme-icon sun-icon"></i>
+                <i class="fas fa-moon theme-icon moon-icon"></i>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Home Section -->
+    <section id="home" class="page-section active">
+        <div class="hero">
+            <div class="hero-background"></div>
+            <div class="hero-content">
+                <h1 class="hero-title">CineVerse</h1>
+                <p class="hero-subtitle">Experience movies like never before. Explore cinematic universes across industries and eras.</p>
+                <a href="#" class="cta-button">Start Exploring</a>
+            </div>
+        </div>
+
+        <div class="section-header">
+            <h2 class="section-title">What's Your Mood?</h2>
+            <p class="section-subtitle">Select your current mood and we'll curate the perfect movie experience for you</p>
+        </div>
+
+        <div class="mood-selector">
+            <div class="mood-option" data-mood="action">Action & Adventure</div>
+            <div class="mood-option" data-mood="comedy">Laugh Out Loud</div>
+            <div class="mood-option" data-mood="drama">Emotional Drama</div>
+            <div class="mood-option" data-mood="romance">Love Stories</div>
+            <div class="mood-option" data-mood="thriller">Edge of Seat</div>
+            <div class="mood-option" data-mood="fantasy">Escape Reality</div>
+        </div>
+
+        <div class="section-header">
+            <h2 class="section-title">Featured Movies</h2>
+            <p class="section-subtitle">Handpicked selections from across all industries</p>
+        </div>
+
+        <div class="movie-grid" id="featured-movies">
+            <!-- Featured movies will be dynamically loaded here -->
+        </div>
+    </section>
+
+    <!-- Hollywood Section -->
+    <section id="hollywood" class="page-section hollywood-section">
+        <div class="hero hollywood-hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Hollywood</h1>
+                <p class="hero-subtitle">The epicenter of blockbuster cinema. Experience the magic of Tinseltown.</p>
+            </div>
+        </div>
+
+        <div class="section-header">
+            <h2 class="section-title">Blockbuster Collection</h2>
+            <p class="section-subtitle">From action-packed adventures to heartwarming dramas</p>
+        </div>
+
+        <div class="movie-grid" id="hollywood-movies">
+            <!-- Hollywood movies will be dynamically loaded here -->
+        </div>
+    </section>
+
+    <!-- Bollywood Section -->
+    <section id="bollywood" class="page-section bollywood-section">
+        <div class="hero bollywood-hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Bollywood</h1>
+                <p class="hero-subtitle">A vibrant world of music, dance, and emotion. Experience the masala magic.</p>
+            </div>
+        </div>
+
+        <div class="section-header">
+            <h2 class="section-title">Bollywood Extravaganza</h2>
+            <p class="section-subtitle">From romantic musicals to high-energy dramas</p>
+        </div>
+
+        <div class="movie-grid" id="bollywood-movies">
+            <!-- Bollywood movies will be dynamically loaded here -->
+        </div>
+    </section>
+
+    <!-- International Section -->
+    <section id="international" class="page-section international-section">
+        <div class="hero international-hero">
+            <div class="hero-content">
+                <h1 class="hero-title">World Cinema</h1>
+                <p class="hero-subtitle">Journey through global storytelling. Discover cinematic gems from around the world.</p>
+            </div>
+        </div>
+
+        <div class="section-header">
+            <h2 class="section-title">Global Masterpieces</h2>
+            <p class="section-subtitle">From European arthouse to Asian cinema</p>
+        </div>
+
+        <div class="movie-grid" id="international-movies">
+            <!-- International movies will be dynamically loaded here -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About CineVerse</h3>
+                <p>Your ultimate destination for cinematic experiences across all industries and eras.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#" data-industry="home">Home</a></li>
+                    <li><a href="#" data-industry="hollywood">Hollywood</a></li>
+                    <li><a href="#" data-industry="bollywood">Bollywood</a></li>
+                    <li><a href="#" data-industry="international">International</a></li>
+                    <li><a href="#" data-industry="classics">Classics</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Support</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 CineVerse. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
